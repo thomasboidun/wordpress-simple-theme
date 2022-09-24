@@ -1,0 +1,20 @@
+/*
+Theme Name: Simple Theme
+Theme URI: https://github.com/thomasboidun/wordpress-simple-theme/
+Author: Thomas Boidun
+Author URI: https://github.com/thomasboidun/
+Description: A simple WordPress theme. Based on Twenty Twenty-Two WordPress theme.
+Requires at least: 5.9
+Tested up to: 6.0
+Requires PHP: 5.6
+Version: 1.0
+Text Domain: thomasboidun
+Tags: full-site-editing, block-patterns
+
+A simple WordPress theme by Thomas Boidun
+*/
+
+.has-the-width-of-the-content-size {
+    max-width: var(--wp--custom--width--content-size);
+    margin: 0 auto;
+}
