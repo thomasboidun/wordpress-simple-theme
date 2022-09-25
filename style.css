@@ -14,7 +14,33 @@ Tags: full-site-editing, block-patterns
 A simple WordPress theme by Thomas Boidun
 */
 
-.has-the-width-of-the-content-size {
-    max-width: var(--wp--custom--width--content-size);
-    margin: 0 auto;
+#main.wp-block-group {
+    padding: var(--wp--custom--spacing--none);
+}
+
+#main.wp-block-group > * > *  {
+    padding: var(--wp--custom--spacing--normal);
+}
+
+.wp-block-separator.is-style-default {
+    width: clamp(6.25rem, 10vw, 25%);
+}
+
+/**
+ * Add hover effect on buttons.
+ **/
+.wp-block-button {
+    transition: filter 0.4s ease-in-out;
+}
+
+.wp-block-button:hover {
+    filter: contrast(2);
+}
+
+/**
+ * theme.json fix.
+ **/
+.wp-block-buttons {
+    --wp--style--block-gap: var(--wp--custom--spacing--normal);
+    margin-top: var(--wp--custom--spacing--none) !important;
 }
