@@ -1,0 +1,13 @@
+.mega-menu:not(.block-editor-block-list__block) {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    position: absolute;
+    width: 100%;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+}
+
+.mega-menu:focus {
+    max-height: 100vh;
+    z-index: 9999;
+}
