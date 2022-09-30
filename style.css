@@ -14,11 +14,23 @@ Tags: full-site-editing, block-patterns
 A simple WordPress theme by Thomas Boidun
 */
 
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 #main.wp-block-group {
     padding: var(--wp--custom--spacing--none);
 }
 
-#main.wp-block-group > * > *  {
+#main.wp-block-group>*>* {
     padding: var(--wp--custom--spacing--normal);
 }
 
