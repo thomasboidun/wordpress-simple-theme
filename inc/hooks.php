@@ -14,3 +14,5 @@ show_admin_bar(false);
 @require_once get_template_directory() . '/inc/hooks/wp_body_open.php';
 
 @require_once get_template_directory() . '/inc/hooks/wp_enqueue_scripts.php';
+
+@require_once get_template_directory() . '/inc/hooks/wp_footer.php';
